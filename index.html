@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Prof. Anthonny Gabriel</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="./assets/picture/logo.jpg" alt="professor" class="logo">
+            <ul class="nav-links">
+                <li>
+                    <a href="#sobre">Sobre</a>
+                </li>
+                <li>
+                    <a href="#importancia">Importância</a>
+                </li>
+                <li>
+                    <a href="#videos">Vídeos</a>
+                </li>
+                <li>
+                    <a href="#formulario">Inscreva-se</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+     
+
+    <main>
+        <section id="sobre" class="sobre">
+            <img src="./assets/picture/YO.jpg" alt="Professor Anthonny Gabriel" class="teacher-picture">
+            <div class="comentario">
+                <h2 id="teacher-a-g">Professor Anthonny Gabriel</h2>
+                <p id="p-about">
+                    Meu nome é Anthonny Gabriel, sou professor de Português, Inglês e
+                    Espanhol. Minha trajetória no ensino começou em 2020, quando
+                    iniciei minhas aulas particulares, ajudando alunos a alcançar seus
+                    objetivos acadêmicos e pessoais. De novembro de 2021 até 2023,
+                    tive o privilégio de trabalhar em uma escola particular, onde
+                    ministrei aulas de Inglês para crianças de 2 a 11 anos de idade.
+                    Ensinar é mais do que uma profissão para mim; é uma paixão. Eu
+                    acredito no poder da educação para transformar vidas e me dedico a
+                    ajudar cada aluno a alcançar o seu melhor. Minha maior motivação é
+                    ver o progresso das pessoas e saber que contribuo para suas
+                    conquistas. Seja aprendendo um novo idioma, aperfeiçoando
+                    conhecimentos ou superando desafios, meu compromisso é oferecer
+                    apoio e inspiração para que meus alunos tenham sucesso. 😊
+                </p>
+            </div>
+        </section>
+
+        <section id="importancia" class="idioma">
+            <!--Português-->
+
+            <div class="card-idiom">
+                <img src="./assets/picture/brazil.png" alt="Bandeira do Brasil">
+                <h3 class="idiom">Português</h3>
+                <button onclick="abrirPopover('pt')" class="pt">Ver Importância</button>
+                <div class="popover-text" id="popover-pt">
+                    Aprender português com profundidade é essencial, pois a forma como nos expressamos influencia diretamente nossa comunicação, nosso raciocínio e nossa imagem diante dos outros. Dominar a língua portuguesa melhora a clareza na fala e na escrita, facilita o aprendizado de outros idiomas e é indispensável para o sucesso acadêmico e profissional. Além disso, conhecer bem o português permite interpretar melhor textos, discursos, músicas e obras literárias, enriquecendo a compreensão do mundo à nossa volta. Valorizar a própria língua é também valorizar a nossa cultura e identidade.
+                    <button onclick="listen('pt')" class="pt">Escute</button>
+                </div>
+            </div>
+
+            <!--Inglês-->
+
+            <div class="card-idiom">
+                <img src="./assets/picture/united-states.png" alt="Estados Unidos">
+                <h3 class="idiom">Inglês</h3>
+                <button onclick="abrirPopover('en')" class="en">Ver Importância</button>
+                <div class="popover-text" id="popover-en">
+                    Aprender inglês é essencial nos dias de hoje, pois é o idioma mais utilizado em comunicações internacionais, na internet e em diversas áreas do conhecimento, como tecnologia, ciência e negócios. Dominar o inglês amplia oportunidades profissionais, facilita viagens e permite o acesso a conteúdos culturais, como filmes, músicas e livros, em sua forma original. Além disso, aprender um novo idioma estimula o cérebro e desenvolve habilidades de comunicação e raciocínio.
+                    <button onclick="listen('en')" class="en">Listen to it</button>
+                </div>
+            </div>
+
+            <!--Espanhol-->
+
+            <div class="card-idiom">
+                <img src="./assets/picture/argentina.png" alt="Argentina">
+                <h3 class="idiom">Espanhol</h3>
+                <button onclick="abrirPopover('es')" class="es">Mostrar a Importância</button>
+                <div class="popover-text" id="popover-es">
+                    Aprender espanhol é investir em uma das línguas mais influentes do mundo. Com mais de 500 milhões de falantes nativos, o espanhol é o segundo idioma mais falado globalmente e representa uma ponte direta com culturas ricas, mercados emergentes e oportunidades internacionais. No campo profissional, o domínio do espanhol é um diferencial competitivo cada vez mais valorizado em empresas que atuam ou desejam expandir-se para a América Latina, Espanha e Estados Unidos. Além disso, aprender espanhol amplia horizontes intelectuais, facilita o aprendizado de outras línguas e enriquece a vivência cultural de quem busca ser um cidadão global.
+                    <button onclick="listen('es')" class="es">Escúchalo</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="videos" id="videos">
+            <h2>Relato de Alunos</h2>
+            <div class="carrossel-container">
+              <button class="btn-anterior" onclick="mudarVideo(-1)">&#10094;</button>
+              <div class="carrossel-video">
+                <video id="videoPlayer" controls>
+                  <source src="./assets/video/indicaçãoJoão.mp4" type="video/mp4">
+                  Seu navegador não suporta vídeos.
+                </video>
+              </div>
+              <button class="btn-proximo" onclick="mudarVideo(1)">&#10095;</button>
+            </div>
+          </section>
+
+        <div class="formulario" id="formulario">
+            <h2 id="inscri">Pré Inscrição</h2>
+            <form id="form">
+               <label>Nome do aluno: <input type="text" name="aluno" id="aluno" required></label>
+               <label>Idade: <input type="number" name="idade" id="idade" required></label>
+               <label>Data de Nascimento <input type="text" name="data" placeholder="dd/mm/aaaa" id="data" required></label>
+               <label id="responsavelLabel" style="display:none">Nome do Responsável <input type="text" name="responsavel" id="responsavel"></label>
+               <label>Idioma desejado:
+                  <select name="idioma" id="idioma" required>
+                     <option value="">Selecione</option>
+                     <option value="portgues">Português</option>
+                     <option value="ingles">Inglês</option>
+                     <option value="espanhol">Espanhol</option>
+                  </select>
+               </label>
+               <label>Objetivo com as aulas: <textarea name="objetivo" required></textarea></label>
+               <button type="submit" id="btn-submit">Enviar</button>
+            </form>
+            <div id="popover" class="popover">
+                O valor será informado pelo professor. Você será redirecionado ao WhatsApp em instantes...
+                <div id="progress-bar-container">
+                    <div id="progress-bar"></div>
+                </div>            
+            </div>
+        </div>
+    </main>
+    <script src="./js/sendWhatsapp.js"></script>
+    <script src="./js/idiom.js"></script>
+    <script src="./js/video.js"></script>
+</body>
+</html>
