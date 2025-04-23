@@ -1,0 +1,71 @@
+@media (max-width: 390px) and (max-height: 844px) {
+    .nav-links {
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        display: none; /* Inicialmente escondido */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    }
+
+    nav-links.show {
+        display: flex;
+    }
+
+    #nav-hamburguer {
+        display: block;
+    }
+
+    .nav-links li:not(:last-child) {
+        display: none;
+    }
+
+    nav-links.show li:not(:last-child) {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .sobre {
+        display: block;
+    }
+
+    .teacher-picture {
+        display: block;
+        margin: 0 auto;
+        width: 445px;
+    }
+
+    #teacher-a-g {
+        display: block;
+        margin: 0 auto;
+        font-size: 35px;
+    }
+
+    #p-about {
+       display: block;
+       margin: 0 auto;
+       margin-right: 25px;
+       font-size: 25px;
+    }
+
+    .card-idiom {
+        display: block;
+        margin-top: 15px;
+    }
+
+    #importancia {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-idiom {
+        width: 100px;
+    }
+
+    .popover-text {
+        font-size: 2rem;
+    }
+}

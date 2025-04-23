@@ -31,7 +31,7 @@ document.getElementById('idade').addEventListener('input', function () {
         const objetivo = this.objetivo.value;
         const responsavel = this.responsavel?.value;
 
-        const mensagem = `Olá, sou o aluno ${nomeAluno}. Tenho ${idade} anos e nasci em ${nascimento}. Desejo aprender ${idioma}. Meu objetivo com as aulas é: ${objetivo}.` + (responsavel ? ` Meu responsável é ${responsavel}.` : '');
+        const mensagem = `Olá, sou o(a) aluno(a) ${nomeAluno}. Tenho ${idade} anos e nasci em ${nascimento}. Desejo aprender ${idioma}. Meu objetivo com as aulas é: ${objetivo}.` + (responsavel ? ` Meu responsável é ${responsavel}.` : '');
 
         const url = `https://wa.me/5535999701695?text=${encodeURIComponent(mensagem)}`;
         window.location.href = url;
