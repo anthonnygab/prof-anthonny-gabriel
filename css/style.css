@@ -44,6 +44,7 @@ header {
         gap: 25px;
         margin: 0;
         padding: 0;
+        list-style: none;
     }
 
     & .logo {
@@ -54,6 +55,16 @@ header {
         color: #D4A64F;
         text-decoration: none;
         font-weight: bold;
+    }
+
+    & #hamburguer {
+        display: none;
+        background-color: black;
+        color: #D4A6AF;
+        text-align: center;
+        font-size: 0.8rem;
+        border: none;
+        outline: none;
     }
 }
 
