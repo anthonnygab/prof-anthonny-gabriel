@@ -1,5 +1,5 @@
 @media (max-width: 412px) and (max-height: 914px) {
-    body, html {
+    * {
         overflow-x: hidden;
     }
 
@@ -57,9 +57,35 @@
         width: 50px;
      }
 
-     .card-idiom img {
-        display: block;
-        margin: 0 auto;
-        width: 50px;
+     .popover-text {
+        font-size: 12px;
+     }
+
+     .formulario {
+        padding: 5px;
+     }
+
+     #form {
+        max-width: 100%;
+        padding: 0 1rem;
+     }
+
+     input, select, texarea {
+        width: 50%;
+     }
+
+     .popover {
+        font-size: 1rem;
+        padding: 1rem;
+     }
+
+     #progress-bar-container {
+        height: 8px;
+     }
+
+     #progress-bar {
+        transition: width 60s linear;
+        height: 100%;
+        width: 0%;
      }
 }
