@@ -10,6 +10,13 @@
         width: 150px;
     }
 
+    .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+        font-size: 15px;
+    }
+
     .sobre {
        display: block;
     }

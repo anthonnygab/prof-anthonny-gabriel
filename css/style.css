@@ -99,9 +99,10 @@ main {
     }
     
     & #p-about {
-        display: block;
         text-align: justify;
-        margin-left: 25px;
+        text-justify: inter-word;
+        hyphens: auto;
+        word-spacing: normal;
     }
 
     & .idioma {
