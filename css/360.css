@@ -1,0 +1,7 @@
+@media screen and (max-width: 360px) {
+    .popover-text {
+        font-size: 0.8rem;
+        margin-left: 1.5rem;
+        margin-right: 2rem;
+    }
+}

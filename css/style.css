@@ -24,6 +24,12 @@
     font-family: Poppins, sans-serif;
 }
 
+@media screen and (max-width: 1170px) {
+    * {
+    overflow-x: hidden;
+    }        
+}
+
 body {
     line-height: 1.6;
     background-color: rgb(255, 255, 255);
@@ -55,16 +61,6 @@ header {
         color: #D4A64F;
         text-decoration: none;
         font-weight: bold;
-    }
-
-    & #hamburguer {
-        display: none;
-        background-color: black;
-        color: #D4A6AF;
-        text-align: center;
-        font-size: 0.8rem;
-        border: none;
-        outline: none;
     }
 }
 
@@ -99,10 +95,9 @@ main {
     }
     
     & #p-about {
-        text-align: justify;
-        text-justify: inter-word;
-        hyphens: auto;
-        word-spacing: normal;
+        display: block;
+        text-align: left;
+        padding: 10px 20px;
     }
 
     & .idioma {

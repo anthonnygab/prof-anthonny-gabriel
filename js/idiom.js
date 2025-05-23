@@ -1,7 +1,7 @@
 const audios = {
-    pt: new Audio("./assets/audio/pt.mp3"),
-    en: new Audio("./assets/audio/en.mp3"),
-    es: new Audio("./assets/audio/es.mp3")
+    pt: new Audio("./assets/audio/Olá! Vamos apre.mp3"),
+    en: new Audio("./assets/audio/Hi! Let's learn.mp3"),
+    es: new Audio("/assets/audio/¡Hola! Vamos a .mp3")
 };
 
 function abrirPopover(id) {
