@@ -1,7 +1,10 @@
 @media screen and (max-width: 360px) {
-    .popover-text {
+     .popover-text {
+        display: block;
+        text-align: left;
+        gap: 0.5rem;
         font-size: 0.8rem;
-        margin-left: 1.5rem;
-        margin-right: 2rem;
-    }
+        margin-left: 20px;
+        margin-right: 19px;
+     }
 }

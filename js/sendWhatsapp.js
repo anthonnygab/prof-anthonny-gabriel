@@ -22,7 +22,7 @@ document.getElementById('idade').addEventListener('input', function () {
         progressBar.style.width = '100%';
     }, 50); // delayzinho para pegar a transição certinho
 
-    // Redireciona após 60 segundos
+    // Redireciona após 5 segundos
     setTimeout(() => {
         const nomeAluno = this.aluno.value;
         const idade = this.idade.value;
