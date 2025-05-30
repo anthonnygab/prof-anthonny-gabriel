@@ -61,4 +61,16 @@
             margin-right: 10px;
         
         }
+
+        footer {
+        ul {
+          display: flex;
+          gap: 0.8rem;
+          font-size: 0.9rem;
+        }
+
+        span {
+          font-size: 0.9rem;
+        }
+     }
     }

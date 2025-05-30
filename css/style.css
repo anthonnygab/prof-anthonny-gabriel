@@ -66,7 +66,7 @@ header {
 
 main {
     padding: 2rem;
-
+    
     & .sobre, .importancia, .videos, .formulario {
         margin-bottom: 3rem;
     }
@@ -305,5 +305,81 @@ main {
         width: 0%;
         background-color: #d18801; /* sua cor padrão */
         transition: width 60s linear;
+    }
+}
+
+footer {
+    background-color: black;
+
+    & .pictureFooter {
+        & img {
+            display: block;
+            margin: 0 auto;
+            width: 200px;
+        }
+    }
+
+    & .socialMedia {
+        display: flex;;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    & ul {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+        text-decoration: none;
+    }
+
+    & a {
+        text-decoration: none;
+
+    }
+
+    & #instagram {
+        background-color: white;
+        padding: 10px;
+        border-radius: 50%;
+        color: #E1306C;
+        font-size: 20px;
+    }
+
+    & #tik-tok {
+        background-color: white;
+        padding: 10px;
+        border-radius: 10px;
+        border-radius: 50%;
+        color: #06c8d6;
+        font-size: 20px;
+    }
+
+    & .links {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    & .a {
+        color: rgb(255, 10, 255);
+    }
+
+    & .a:hover {
+        color: rgb(232, 61, 255)
+    }
+
+    .divisor {
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+        border-bottom: 2pt solid rgba(255, 255, 255, 0.397);
+        width: 50%;
+    }
+
+    span {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+        color: white;
     }
 }

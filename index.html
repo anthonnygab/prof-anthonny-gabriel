@@ -26,7 +26,7 @@
     </header>
     
     <main>
-        <section id="sobre" class="sobre">
+        <section id="sobre" class="sobre" class="fade-in">
             <img src="./assets/picture/YO.jpg" alt="Professor Anthonny Gabriel" class="teacher-picture">
             <div class="comentario">
                 <h2 id="teacher-a-g">Professor Anthonny Gabriel</h2>
@@ -48,7 +48,7 @@
             </div>
         </section>
 
-        <section id="importancia" class="idioma">
+        <section id="importancia" class="idioma" class="fade-in">
             <!--Português-->
 
             <div class="card-idiom">
@@ -86,7 +86,7 @@
             </div>
         </section>
 
-        <section class="videos" id="videos">
+        <section class="videos" id="videos" class="fade-in">
             <h2>Relato de Alunos</h2>
             <div class="carrossel-container">
               <button class="btn-anterior" onclick="mudarVideo(-1)">&#10094;</button>
@@ -100,7 +100,7 @@
             </div>
           </section>
 
-        <div class="formulario" id="formulario">
+        <div class="formulario" id="formulario" class="fade-in">
             <h2 id="inscri">Pré Inscrição</h2>
             <form id="form">
                <label>Nome do aluno: <input type="text" name="aluno" id="aluno" required></label>
@@ -126,6 +126,40 @@
             </div>
         </div>
     </main>
+
+    <footer class="fade-in">
+        <div class="navFooter">
+            <div class="pictureFooter">
+            <img src="./assets/picture/logo.jpg" alt="logo-footer">
+        </div>
+
+        <div class="socialMedia">
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/prof_anthonny/?utm_source=qr&igsh=MW5mb2U0eGxsY3NxYw%3D%3D#" target="_blank" rel="noopener noreferrer" class="fa-brands fa-instagram" id="instagram"></a>
+                </li>
+                <li>
+                    <a href="https://www.tiktok.com/@anthonnygabriel090?_t=ZM-8wnVB82WH9p&_r=1" target="_blank" rel="noopener noreferrer" class="fa-brands fa-tiktok" id="tik-tok"></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="links">
+            <ul class="footer-links">
+                <li><a href="#sobre" class="a">Sobre</a></li>
+                <li><a href="#importancia" class="a">Importância</a></li>
+                <li><a href="#videos" class="a">Relatos</a></li>
+                <li><a href="#formulario" class="a">Pré Inscrição</a></li>
+            </ul>
+        </div>
+
+        <div class="divisor"></div>
+
+        <span>&copy; 2025 Prof. Anthonny Gabriel. Todos direitos reservados.</span>
+
+        </div>
+    </footer>
+    <script src="./js/scroll.js"></script>
     <script src="./js/sendWhatsapp.js"></script>
     <script src="./js/idiom.js"></script>
     <script src="./js/video.js"></script>
